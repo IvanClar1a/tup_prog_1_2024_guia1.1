@@ -1,0 +1,35 @@
+Proceso sin_titulo
+	
+	Definir MtelaTotal, pTelaMetro, CantRemeras,telaXremera Como Real;
+	
+	Escribir "Ingresar los metros de tela a utilizar";
+	Leer MtelaTotal;
+	
+	Escribir "Ingresar el precio por metro de tela";
+	Leer pTelaMetro;
+	
+	Escribir "Ingrese la cantidad de tela por remera";
+	Leer telaXremera;
+	
+	CantRemeras <- MtelaTotal / telaXremera;
+	
+	Definir Premera, Premeras Como Real;
+	
+	Premera <- pTelaMetro * telaXremera;
+	
+	Premeras <- pTelaMetro * MtelaTotal;
+	
+	Definir Recargo1, Recargo2, suma1, suma2 Como Real;
+	
+	Recargo1 <- (80 * Premera ) / 100;
+	
+	suma1 <- Premera + Recargo1;
+	
+	Recargo2 <- (80 * Premeras ) / 100;
+	
+	suma2 <- Premeras + Recargo2;
+	
+	Escribir "Se produjo un total de : ", CantRemeras, " remeras";
+	Escribir "Precio total con recargo del total de remeras : ", suma2, " $ ";
+	Escribir "Precio de una sola remera con recargo: ",suma1, " $ ";
+FinProceso
