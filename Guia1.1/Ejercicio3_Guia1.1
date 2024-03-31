@@ -1,0 +1,22 @@
+Proceso sin_titulo
+	
+	definir ancho, largo, profundidad Como Real;
+	
+	Escribir "Ingrese el ancho y largo";
+	leer ancho, largo;
+	
+	Escribir "Ingrese la profundidad";
+	Leer profundidad;
+	
+	Definir volumen, cantLiros, CantGramos Como Real;
+	
+	volumen <- ancho * largo * profundidad;
+	
+	cantLiros <- volumen * 1000;
+	
+	CantGramos <- (cantLiros * 7 ) / 1000;
+	
+	Escribir "La pileta tiene una capacidad de: ", cantLiros, " Litros ";
+	
+	Escribir "La pileta utiliza: ", CantGramos," gramos de cloro en total";
+FinProceso
